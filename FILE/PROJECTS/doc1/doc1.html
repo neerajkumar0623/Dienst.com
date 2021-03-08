@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc1</title>
+    <style>
+        body{
+            background-color: rgb(240, 230, 230);
+        }
+        .container {
+            
+        }
+
+        .left {
+            list-style: none;
+            border: 2px solid white;
+            border-radius: 10px;
+            width: 200px;
+            height: 100vh;
+            background-color: white;
+
+        }
+
+        .left li a {
+            margin-left: 25px;
+            color: black;
+            text-decoration: none;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        #hel a {
+            position: absolute;
+            bottom: 50px;
+
+        }
+
+        .left img {
+            height: 30px;
+        }
+
+        .left h3 {
+            position: absolute;
+            left: 45px;
+            top: -2px;
+            color: black;
+        }
+
+        div #over img {
+            margin: 5px;
+            position: absolute;
+            top: 60px;
+            height: 23px;
+        }
+
+        div #cal img {
+            position: absolute;
+            margin: 5px;
+            top: 100px;
+            height: 23px;
+        }
+
+        div #pat img {
+            position: absolute;
+            margin: 5px;
+            top: 140px;
+            height: 23px;
+
+        }
+
+        div #msg img {
+            position: absolute;
+            margin: 5px;
+            top: 175px;
+            height: 23px;
+        }
+
+        div #pay img {
+            position: absolute;
+            margin: 5px;
+            top: 210px;
+            height: 23px;
+        }
+
+        div #set img {
+
+            position: absolute;
+            margin: 5px;
+            top: 250px;
+            height: 23px;
+
+        }
+
+        div #help img {
+            position: absolute;
+            margin: 5px;
+            bottom: 50px;
+            height: 23px;
+
+        }
+
+        .left li a:hover {
+            background-color:blue;
+            color:white;
+            border-radius: 15px;
+        }
+
+        .admin img {
+            position: absolute;
+            bottom: 0px;
+            margin: 5px;
+
+        }
+
+        .admin p {
+            color: black;
+            display: block;
+            position: absolute;
+            bottom: -8px;
+            left: 50px;
+        }
+
+        .admin h4 {
+            color: black;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 50px;
+        }
+
+        .menubar img {
+            position: absolute;
+            top: 11px;
+            left: 190px;
+            height: 20px;
+
+        }
+
+        .menubar img:hover {
+
+            background-color:blue;
+            border-radius: 15px;
+        }
+
+        .top {
+            position: absolute;
+            top: 5px;
+            left: 215px;
+            display: block;
+            border: 2px solid  white;
+            border-radius: 10px;
+            width: 1200px;
+            height: 100px;
+            background-color: white;
+        }
+
+        .plist img {
+            height: 30px;
+            position: absolute;
+            top: 20px;
+
+        }
+
+        .plist h2 {
+            position: absolute;
+            top: 5px;
+            left: 30px;
+            display: block;
+
+        }
+
+        .link1 {
+            position: absolute;
+            left: 180px;
+            top: 30px;
+        
+        }
+        .link1 a{
+            text-decoration: none;
+            color: black;
+
+        }
+        .link2{
+            position: absolute;
+            left: 220px;
+            top: 30px;
+
+        }
+        .link2 a{
+            text-decoration: none;
+            color: black;
+        }
+        .link2 a:hover,.link1 a:hover{
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+        }
+        .search input{
+            border: 1px solid black;
+            border-radius: 10px;
+            position: absolute;
+            left: 800px;
+            top: 30px;
+        }
+        .noti {
+            position: absolute;
+            top: 28px;
+            left: 1000px;
+        
+            
+        }
+        .noti button{
+            border:0px solid black;
+            cursor: pointer;
+            height: 30px;
+            border-radius: 10px;
+        }
+        .noti img{
+            height: 25px;
+
+        }
+        .noti button:hover{
+            background-color: blue;
+            color: white;
+
+        }
+        .top2{
+            border:  2px solid white;
+            border-radius: 10px;
+            width:1200px;
+            height: 70px;
+            position: absolute;
+            top: 105px;
+            left: 0px;
+            background-color:  white;
+            box-shadow: 10px;
+        }
+        .top2 h1{
+            position: absolute;
+            left: 20px;
+        }
+        .top2 p{
+            display: block;
+            position: absolute;
+            left: 60px;
+            top: 15px;
+        }
+        .Sort{
+            position: absolute;
+            top: 26px;
+            left: 130px;
+        }
+        .Sort select{
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            
+        }
+        .filter img{
+            height: 20px;
+
+        }
+    .filter button{
+        width: 100px;
+        justify-content: left;
+        align-items: left;
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 1000px;
+        border: 0px solid white;
+        border-radius: 10px;
+    }
+    .filter p{
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        left: 40px;
+        top: -13px;
+    }
+    .filter button:hover{
+        background-color:blue;
+        color: white;
+        cursor: pointer;
+    
+    }
+    .box1{
+        border: 2px solid white;
+        border-radius: 10px;
+        height: 70px;
+        width: 1200px;
+        background-color: white;
+        position: absolute;
+        top: 200px;
+    }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left">
+            <img src="images/icon.png" alt="icon">
+            <h3>Zendenta</h3>
+            <br><br>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Patient List</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Payment information</a></li>
+            <li><a href="#">Setting</a></li>
+            <li id="hel"><a href="#">Help?</a></li>
+            <div id="over">
+
+                <img src="images/overview.png" alt="icon">
+            </div>
+            <div id="pat">
+
+                <img src="images/patient.png" alt="icon">
+            </div>
+            <br><br><br><br>
+            <div id="msg">
+
+
+                <img src="images/message.png" alt="icon">
+            </div>
+            <br>
+            <div id="cal">
+
+                <img src="images/calendar.png" alt="icon">
+            </div>
+            <br>
+            <div id="pay">
+
+                <img src="images/payment.png" alt="icon">
+            </div>
+            <br>
+            <div id="set">
+
+                <img src="images/setting.png" alt="icon">
+            </div>
+            <br>
+            <div id="help">
+
+                <img src="images/help.png" alt="icon">
+            </div>
+            <div class="menubar">
+                <img src="images/menubar.png" alt="icon">
+
+            </div>
+            <div class="admin">
+                <img src="images/doctor.png" alt="icon">
+
+                <h4>Nk solanki</h4>
+                <p>Dentist</p>
+            </div>
+
+        </div>
+        <div class="top">
+            <div class="plist">
+                <img src="images/patient.png" alt="icon">
+                <h2>Patient List</h2>
+                <div class="link1">
+
+                    <a href="#">List</a>
+                </div>
+                <div class="link2">
+
+                    <a href="#">Thumbnail</a>
+
+                </div>
+
+            </div>
+            <div class="search">
+                <input type=" search" name="" placeholder="search..">
+            </div>
+            <div class="noti">
+                <button><img src="images/notificate.png" alt="icon"></button>
+            </div>
+            <div class="top2">
+                <h1>76</h1>
+                <p>Patients</p>
+                <div class="Sort">
+
+                    Sort by:<select name="appoinment">
+        
+                        <option  value="Last Appoinment">Last Appoinment</option>
+                        <option value="Next Appoinment">Next Appoinment</option>
+                    <option value="Register date">Register Date</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <button ><img src="images/filter.png" alt="icon"><p>Filter</p></button>
+                </div>
+                    
+                
+            </div>
+            
+            <div class="box1">
+                hello
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html> 

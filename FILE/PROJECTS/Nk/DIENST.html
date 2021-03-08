@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link href="k-image/1615042339439.jpg" rel="icon">
+  <style>
+    .fixed-top {
+      border-bottom: 2px solid rgb(10, 8, 8);
+      margin-left: 2px;
+      margin-right: 9px;
+      height: 80px;
+      width: 1450px;
+      background-color: rgb(17, 13, 13);
+      position: absolute;
+      top: 2px;
+
+
+    }
+
+    body {
+      background-color: rgb(245, 234, 234);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+    }
+
+    .nav-menu {
+      display: inline-block;
+
+    }
+
+    .nav-menu li {
+      display: inline-block;
+      list-style: none;
+      position: relative;
+      top: 30px;
+      left: 1000px;
+    }
+
+    .nav-menu li a {
+      color: rgb(245, 240, 240);
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    .nav-menu li a:hover {
+      cursor: pointer;
+      color: rgb(24, 17, 17);
+      border-radius: 5px;
+      background-color: rgb(242, 255, 255);
+          }
+
+    .icon {
+      position: relative;
+      left: -271px;
+      top: 20px;
+      display: inline-block;
+      background-color: rgb(245, 234, 234);
+      width: 250px;
+      height: 45px;
+      transform: skew(-20deg);
+    }
+
+    .whiteicon {
+      position: relative;
+      left: -522px;
+      top: 24px;
+      display: inline-block;
+      background-color: rgb(12, 7, 7);
+      width: 250px;
+      height: 45px;
+      transform: skew(-20deg);
+
+    }
+
+    .iconname h4 {
+      display: inline-block;
+      color: rgb(245, 234, 234);
+      font-size: 45px;
+      position: relative;
+      top: -104px;
+      left: 49px;
+      font-weight: 500;
+    }
+
+    .extention h3 {
+      color: rgb(245, 234, 234);
+      display: inline-block;
+      position: relative;
+      top: -268px;
+      left: 285px;
+      font-size: 50px;
+
+    }
+
+
+    .bodylogo img {
+      position: absolute;
+      top: 130px;
+      right: 100px;
+      height: 450px;
+      animation-name: logo;
+      animation-duration: 2s;
+
+
+    }
+
+    @keyframes logo {
+      from {
+        top: 120px;
+      }
+
+      to {
+        down: 0px;
+      }
+    }
+
+    .lanname h1 {
+      color: rgb(24, 23, 23);
+      font-size: 50px;
+      position: absolute;
+      top: 130px;
+      left: 17px;
+      animation: linear;
+      animation: 4s;
+    }
+
+    .box1 {
+
+      position: relative;
+      border: 2px solid rgb(17, 11, 11);
+      border-radius: 10px;
+      top: 620px;
+      left: 50px;
+      height: 280px;
+      width: 280px;
+      backdrop-filter: blur(2px);
+
+    }
+
+    .box1 h3 {
+      display: inline-block;
+      position: absolute;
+      top: 150px;
+      left: 45px;
+      font-size: 30px;
+    }
+
+    .box1 img {
+      display: inline-block;
+      position: absolute;
+      top: 30px;
+      left: 62px;
+      height: 130px;
+
+    }
+
+    .box2 {
+
+      position: relative;
+      border: 2px solid rgb(15, 13, 13);
+      border-radius: 10px;
+      top: 335px;
+      left: 1000px;
+      height: 280px;
+      width: 280px;
+      backdrop-filter: blur(2px);
+    }
+
+    .box2 img {
+      height: 130px;
+      display: inline-block;
+      position: absolute;
+      top: 35px;
+      left: 62px;
+    }
+
+    .box2 h3 {
+      display: inline-block;
+      position: absolute;
+      top: 150px;
+      left: 60px;
+      font-size: 30px;
+
+    }
+
+    .box3 {
+      position: relative;
+      border: 2px solid black;
+      border-radius: 10px;
+      top: 52px;
+      left: 527px;
+      height: 280px;
+      width: 280px;
+      backdrop-filter: blur(2px);
+    }
+
+    .box3 img {
+      height: 130px;
+      display: inline-block;
+      position: absolute;
+      top: 35px;
+      left: 70px;
+
+    }
+
+    .box3 h3 {
+      display: inline-block;
+      position: absolute;
+      top: 150px;
+      left: 70px;
+      font-size: 30px;
+    }
+
+    .box4 {
+
+      position: relative;
+      border: 2px solid rgb(17, 15, 15);
+      border-radius: 10px;
+      top: 100px;
+      left: 50px;
+      height: 280px;
+      width: 280px;
+      backdrop-filter: blur(2px);
+    }
+
+    .box4 img {
+      height: 130px;
+      display: inline-block;
+      position: absolute;
+      top: 35px;
+      left: 62px;
+    }
+
+    .box4 h3 {
+      display: inline-block;
+      position: absolute;
+      top: 150px;
+      left: 60px;
+      font-size: 30px;
+    }
+
+    .box5 {
+
+      position: relative;
+      border: 2px solid rgb(7, 6, 6);
+      border-radius: 10px;
+      top: -181px;
+      left: 527px;
+      height: 280px;
+      width: 280px;
+      backdrop-filter: blur(2px);
+    }
+
+    .box5 img {
+      height: 130px;
+      display: inline-block;
+      position: absolute;
+      top: 35px;
+      left: 62px;
+
+    }
+
+    .box5 h3 {
+      display: inline-block;
+      position: absolute;
+      top: 150px;
+      left: 60px;
+      font-size: 30px;
+    }
+
+    .box6 {
+
+      position: relative;
+      border: 2px solid rgb(3, 3, 3);
+      border-radius: 10px;
+      top: -462px;
+      left: 1000px;
+      height: 280px;
+      width: 280px;
+      backdrop-filter: blur(2px);
+    }
+
+    .box6 img {
+      height: 130px;
+      display: inline-block;
+      position: absolute;
+      top: 35px;
+      left: 62px;
+
+    }
+
+    .box6 h3 {
+      display: inline-block;
+      position: absolute;
+      top: 150px;
+      left: 60px;
+      font-size: 30px;
+    }
+
+    .services h1 {
+      display: inline-block;
+      position: absolute;
+      top: 500px;
+      left: 550px;
+    }
+
+    .about {
+      position: absolute;
+      top: 1400px;
+      left: 100px;
+      border: 2px solid rgb(245, 234, 234);
+      border-radius: 10px;
+      height: 400px;
+      width: 1200px;
+
+    }
+
+    .about p {
+      position: absolute;
+      top: 70px;
+      left: 30px;
+
+    }
+
+    .about h2 {
+
+      position: absolute;
+      left: 450px;
+    } 
+    .getstart{
+      display: inline-block;
+      border: 2px solid black;
+      height: 150px;
+      width: 1200px;
+    }
+
+      
+    }
+    .getstart p{
+      position: absolute;
+      top: 500px;
+      left:30px;
+    }
+    .getstart h3{
+      position: absolute;
+      top: 180px;
+      left:5px;
+    }
+
+    .card1 {
+      display: inline-block;
+      position: relative;
+      border: 2px solid rgb(17, 15, 15);
+      border-radius: 10px;
+      top: 200px;
+      left: 50px;
+      height: 350px;
+      width: 280px;
+      backdrop-filter: blur(2px);
+    }
+
+    .card2 {
+      display: inline-block;
+      position: relative;
+      border: 2px solid rgb(7, 6, 6);
+      border-radius: 10px;
+      top: 200px;
+      left: 245px;
+      height: 350px;
+      width: 280px;
+      backdrop-filter: blur(2px);
+    }
+
+    .card3 {
+      display: inline-block;
+      position: relative;
+      border: 2px solid rgb(3, 3, 3);
+      border-radius: 10px;
+      top: 200px;
+      left: 431px;
+      height: 350px;
+      width: 280px;
+      backdrop-filter: blur(2px);
+    }
+
+    .card1 h3 {
+      position: absolute;
+      top: 80px;
+      left: 50px;
+    }
+
+    .card1 h4 {
+      position: absolute;
+      top: 125px;
+      left: 20px;
+    }
+
+    .card2 h3 {
+      position: absolute;
+      top: 80px;
+      left: 65px;
+
+    }
+
+    .card2 h4 {
+      position: absolute;
+      top: 150px;
+      left: 20px;
+    }
+
+    .card3 h3 {
+      position: absolute;
+      top: 80px;
+      left: 65px;
+
+    }
+
+    .card3 h4 {
+      position: absolute;
+      top: 140px;
+      left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="icon">
+
+      </div>
+      <div class="whiteicon">
+
+
+      </div>
+      <div class="iconname">
+        <h4>
+          D I E N S T
+        </h4>
+      </div>
+      <div class="extention">
+        <h3>.com</h3>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  <div class="bodylogo">
+    <img src="k-image/IMG_20210306_202153_097-removebg-preview.png" alt="logo">
+  </div>
+  <div class="lanname">
+    <h1>
+      ONE DESK ALL TECH
+      <br>SOLUTION.
+    </h1>
+  </div>
+  <div class="services">
+    <h1>OUR SERVICES</h1>
+  </div>
+  <div class="box1"><img src="k-image/hdd-regular.svg">
+    <h3>Disk Partition</h3>
+  </div>
+  <div class="box2"><img src="k-image/volume-up-solid.svg" alt="icon">
+    <h3>Beep Sound</h3>
+  </div>
+  <div class="box3"><img src="k-image/wifi.png" alt="icon">
+    <h3>Wifi Issue</h3>
+  </div>
+  <div class="box4"><img src="k-image/computer-tower.png" alt="">
+    <h3>CPU Can't Response</h3>
+  </div>
+  <div class="box5"><img src="k-image/technical-support.png" alt="icon">
+    <h3>Other Issues</h3>
+  </div>
+  <div class="box6"><img src="k-image/read-more.png" alt="icon">
+    <h3>More Issues</h3>
+  </div>
+  <div class="about">
+    <h2>
+      ABOUT US
+    </h2>
+    <p>
+    <h4> Our mission </h4>
+    Dienst .com was founded to offer solutions to all your tech related problems that will help even the common man
+    who does not even know how to operate the computer other than work.
+    Dienst is a Spanish word which actually means ‘Service’.
+    <br>Our pillars
+    1. User friendly: All you need to do is just visit our website and we will get through with you, all your problems
+    are ours.
+    2. Accessibility: Dienst .com is the cheapest website that provides all the tech solutions. If a company asks for
+    1000₹ for a solution but your local service provider give a 50% discount i.e 500 We only asks 25% of ₹1000 i.e
+    ₹250.
+    3.Service: We sit at the other side of the computer and connect our computer with yours to solve your problem. If
+    this doesn’t work we are a chain of local tech people who will come at your place and will fix things.
+    4. Educate: We not only fix up your computers but also we teach you how to do it. It’s like a one time investment
+    for a problem.
+    5. Feedback: Not only we provide service we ask for your opinions and consider it with full respect.
+    Our Team
+    </p>
+  </div>
+  <div class="getstart">
+    <h3>How It All Started? </h3>
+    <p>
+      They founded Dienst .com when harsh realised that he can’t actually solve all the problems related to computer.
+      He then approached his friend nikhil who further contacted their mutual friend kuldeep who is an expert at IT
+      and then harsh got to know how things actually work in the IT world. All the expenses are hightened when we
+      contact big companies. They made this their motive to provide a cheap way to solve the tech problems with same
+      quality.</p>
+
+  </div>
+  <div class="team">
+    <div class="card1">
+      <h3>Harsh Brahmbhatt<br>
+        (FOUNDER)</h3>
+      <h4>
+        He is an entrepreneur and a social media influencer who believes that besides education in other field a person
+        can aim for success ina different field. He seeks for opportunities and makes his path through the crowd.Being
+        an
+        influencer he values the emotions of his audience and works hard until they are satisfied He knows that without
+        them he is nothing.
+      </h4>
+    </div>
+    <div class="card2">
+      <h3>Nikhil Mewara<br>
+        ( FOUNDER)</h3>
+      <h4>
+        He is an developer and an entrepreneur. Also he is a coder and is very focused on his career. He is passionate
+        and very determined at what he does. He is very punctual about the work and believes in sharing the ideas and
+        helping others. Nikhil keeps the needs of his clients over anything.
+      </h4>
+    </div>
+    <div class="card3">
+      <h3>Kuldeep singh dahiya
+        (FOUNDER)</h3>
+      <h4>
+        He is a developer and an entrepreneur. He has always been an IT guy since his childhood.He started various
+        businesses some of them were failure but the one thing that kept him going was his spirit and he learnt that
+        valuing his clients is the biggest achievement in a business. He believes that failure is a road to success and
+        think of it as a journey.
+      </h4>
+    </div>
+  </div>
+</body>
+
+</html>
